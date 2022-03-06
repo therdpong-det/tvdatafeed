@@ -312,7 +312,7 @@ class TvDatafeed:
     def __create_connection(self):
         logging.debug("creating websocket connection")
         self.ws = create_connection(
-            "wss://data.tradingview.com/socket.io/websocket", headers=self.headers
+            "wss://prodata.tradingview.com/socket.io/websocket", headers=self.headers
         )
 
     @staticmethod
